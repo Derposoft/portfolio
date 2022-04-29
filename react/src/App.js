@@ -1,12 +1,16 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './navigation/Main';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-          <a> Site Under Construction! </a>
-      </header>
+      <BrowserRouter>
+        <header className="App-header">
+            <Main />
+        </header>
+      </BrowserRouter>
     </div>
   );
 }
