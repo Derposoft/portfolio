@@ -19,7 +19,7 @@ const Main = (e) => {
   return (
     <Box sx={{ flexGrow: 1 }} class='main'>
       <Grid container spacing={2} style={{height: '100%'}}>
-        <Grid item xs={4}>
+        <Grid item xs={4} style={{verticalAlign: 'center', textAlign: 'center'}}>
           <PageSelector page={page} />   
         </Grid>
         <Divider orientation="vertical" flexItem style={{marginRight:"-1px"}} />

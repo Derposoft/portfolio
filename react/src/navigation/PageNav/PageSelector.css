@@ -1,3 +1,15 @@
 .selector {
     vertical-align: middle;
+    text-align: center;
+}
+
+.pfp {
+    margin: 20px;
+    border-radius: 50%;
+    /*border-style: solid;*/
+    border-width: 5px;
+    border-color: #4040a1;
+    outline-style: solid;
+    outline-width: 5px;
+    outline-color: #36486b;
 }
