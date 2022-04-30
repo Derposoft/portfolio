@@ -15,7 +15,7 @@ function Home(props) {
                 </Link>
             </div>
             <FancyTyper speed={50}>
-                {['to prospective HMs: welcome to vchad\'s website!', 'gamers: visit mc.derposoft.com!']}
+                {['to prospective HMs: welcome to vchad\'s website!', 'gamers: hmu @Derposoft#3658']}
             </FancyTyper>
         </div>
     )
