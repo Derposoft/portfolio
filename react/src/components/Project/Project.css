@@ -1,13 +1,24 @@
+.project-container {
+}
+
 .project {
+    cursor: pointer;
     color: inherit;
     background-color: inherit;
     font: inherit;
-    margin: 10px;
-    width: 8vw;
-    height: 10vw;
+    text-align: left;
+    margin: 1vw;
+    width: 30vw;
+    height: 18vw;
     border-style: solid;
     border-radius: 3px;
     border-width: 2px;
     /*box-shadow: 5px 5px #181a1f;*/
     
+}
+
+.cardtext {
+    padding-left: 1vw;
+    vertical-align: middle;
+    font-size: 3vw;
 }

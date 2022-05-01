@@ -12,7 +12,7 @@ function Portfolio(props) {
     return (
         <div>
             {projects.map(project => {
-                return <Project name={project.name} />
+                return <Project {...project}/>
             })}
         </div>
     )
