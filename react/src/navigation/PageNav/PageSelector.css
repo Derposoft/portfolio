@@ -13,3 +13,12 @@
     outline-width: 5px;
     outline-color: #36486b;
 }
+
+.bottomtext {
+    display: inline-block;
+    width: 100%;
+    bottom: 20%;
+    text-align: center;
+    align-items: center;
+    font-size: small;
+}

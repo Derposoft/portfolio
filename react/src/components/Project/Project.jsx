@@ -5,7 +5,7 @@ function Project(props) {
     return (
         <div>
             <Card class='project'>
-                <CardHeader title={props.name} />
+                <b>{props.name}</b>
             </Card>
         </div>
     )

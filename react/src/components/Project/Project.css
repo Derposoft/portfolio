@@ -1,8 +1,13 @@
 .project {
     color: inherit;
     background-color: inherit;
+    font: inherit;
     margin: 10px;
-    width: 20%;
+    width: 8vw;
+    height: 10vw;
     border-style: solid;
-    box-shadow: 1px;
+    border-radius: 3px;
+    border-width: 2px;
+    /*box-shadow: 5px 5px #181a1f;*/
+    
 }

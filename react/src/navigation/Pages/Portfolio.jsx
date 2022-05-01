@@ -4,8 +4,9 @@ import Project from '../../components/Project/Project'
 function Portfolio(props) {
     const projects = [
         {
-            name: 'test',
-            subtitle: 'did cool stuff'
+            name: 'derposoft.com',
+            subtitle: 'The website you\'re on!',
+            url: 'https://github.com/Derposoft/Derposoft.github.io'
         }
     ]
     return (

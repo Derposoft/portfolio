@@ -21,6 +21,9 @@ function PageSelector(props) {
                 height={pfp_size}
                 class='pfp'
             />
+            <div class='bottomtext'>
+                <Link style={{...linkStyle/*, position: 'absolute', bottom: '10%'*/}} href='https://github.com/Derposoft/Derposoft.github.io'>view source</Link>
+            </div>
         </div>
     )
 }

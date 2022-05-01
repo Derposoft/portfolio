@@ -13,6 +13,8 @@ function FancyTyper(props) {
                 text={props.children}
                 speed={speed}
                 eraseSpeed={speed}
+                eraseDelay={props.eraseDelay}
+                typingDelay={props.typingDelay}
                 cursorRenderer={cursor => <p>_</p>}
                 displayTextRenderer={(text, i) => {
                 return (
