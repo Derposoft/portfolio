@@ -22,7 +22,7 @@ const Main = (e) => {
         <Grid item xs={4} style={{verticalAlign: 'center', textAlign: 'center'}}>
           <PageSelector page={page} />   
         </Grid>
-        <Divider orientation="vertical" flexItem style={{marginRight:"-1px"}} light />
+        {/*<Divider orientation="vertical" flexItem style={{marginRight:"-1px"}} />*/}
         <Grid item xs={8}>
           <div>
             <PageWindow location={location} />
