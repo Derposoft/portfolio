@@ -23,8 +23,8 @@ const Main = (e) => {
           <PageSelector page={page} />   
         </Grid>
         {/*<Divider orientation="vertical" flexItem style={{marginRight:"-1px"}} />*/}
-        <Grid item xs={8}>
-          <div>
+        <Grid item xs={8} className='tall'>
+          <div className='tall'>
             <PageWindow location={location} />
           </div>
         </Grid>

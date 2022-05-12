@@ -3,8 +3,8 @@ import Home from '../Pages/Home'
 import Portfolio from '../Pages/Portfolio'
 import About from '../Pages/About'
 
-function Page(props) {
-    var component = <p></p>
+function PageWindow(props) {
+    var component = <p className='tall'></p>
     switch(props.location.hash) {
         case '#home':
             component = <Home />
@@ -19,10 +19,8 @@ function Page(props) {
             component = <Home />
     }
     return (
-        <div class=''>
-            <p>{component}</p>
-        </div>
+        <p className='tall'>{component}</p>
     )
 }
 
-export default Page
+export default PageWindow

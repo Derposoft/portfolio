@@ -8,3 +8,22 @@
     padding-left: 10%;
     padding-right: 10%;
 }
+
+.projectlist {
+    overflow-y: scroll;
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(100, 100, 100, .5);
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #818B99;
+    border-radius: 9px;
+    width: 9px;
+}
