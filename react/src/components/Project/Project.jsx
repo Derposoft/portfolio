@@ -37,7 +37,7 @@ function Project(props) {
                     <Grid item xs={2}>
                         <div className='rotatebutton'>
                             <a onClick={e=>e.stopPropagation()} style={{color:'white', zIndex:25}} href={props.url} target='_blank'><GitHub fontSize='large' /></a>
-                            <ArrowDropDown style={{marginLeft: '20px'}} fontSize='large' className={(open ? 'turndown' : 'turnup')}/>
+                            <ArrowDropDown style={{marginLeft: '1vw'}} fontSize='large' className={(open ? 'turndown' : 'turnup')}/>
                         </div>
                     </Grid>
                 </Grid>
