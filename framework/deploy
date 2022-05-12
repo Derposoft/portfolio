@@ -1,0 +1,9 @@
+npm run build
+cd ..
+git rm -rf static
+cd react
+cp build/* ../
+cd ..
+git add static/ index.html asset-manifest.json
+git commit -m "+website update"
+git push
