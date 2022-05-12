@@ -18,10 +18,9 @@ function Portfolio(props) {
             url: config.GITHUB_URL+config.GITHUB_USER+'/'+x.name
         }
     })
-    console.log(projects)
-    
     return (
         <div className='projectlist'>
+            <p style={{fontSize: '1.5vw'}}>click on a project to see its GitHub README</p>
             {projects.map(project => {
                 return <Project {...project}/>
             })}

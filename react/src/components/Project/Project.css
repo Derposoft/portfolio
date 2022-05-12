@@ -16,6 +16,7 @@
 }
 
 .project {
+    margin: 10px auto !important;
     cursor: pointer;
     color: inherit;
     background-color: inherit;
@@ -35,4 +36,10 @@
     padding-left: 1vw;
     vertical-align: middle;
     font-size: 2vw;
+}
+
+.readmetext {
+    padding-left: 1vw;
+    vertical-align: middle;
+    font-size: 1.5vw;
 }

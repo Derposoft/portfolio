@@ -14,7 +14,7 @@ function PageSelector(props) {
             {pages.map(x => {
                 return <Link style={linkStyle} href={'#'+x}><p>{x}</p></Link>
             })}
-            <Divider light />
+            <Divider style={{borderColor:'gray'}} />
             <img 
                 src='me_shorthair_blurred_square.jpg' 
                 width={pfp_size}
