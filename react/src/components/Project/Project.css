@@ -1,7 +1,18 @@
-.dropdownarrow {
+.rotatebutton {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: inline-block;
 }
 
-.project-container {
+.turndown {
+    transition: 0.2s ease-in-out !important;
+    transform: rotate(-0deg) !important;
+}
+
+.turnup {
+    transition: 0.2s ease-in-out !important;
+    transform: rotate(-90deg) !important;
 }
 
 .project {
@@ -23,5 +34,5 @@
 .cardtext {
     padding-left: 1vw;
     vertical-align: middle;
-    font-size: 3vw;
+    font-size: 2vw;
 }
