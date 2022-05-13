@@ -3,28 +3,45 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import { Button } from '@mui/material'
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import 'react-vertical-timeline-component/style.min.css';
-
+import axios from 'axios'
+const cheerio = require('cheerio')
+/*
+const LINKEDIN_URL = 'https://www.linkedin.com/in/viswanath-chadalapaka-910b2013b/'
+axios.get(LINKEDIN_URL).then(res => {
+    const $ = cheerio.load(res.data)
+    const lists = $('.pvs-list')
+    console.log(lists)
+})
+*/
 const experiences = [
     {
         icon: 'metaLogo.png',
-        name: 'Meta SDE intern',
-        location: 'Menlo Park, CA',
+        name: 'meta SDE intern',
+        location: 'menlo park, CA',
         description: 'summer 2022 intern at the shopping ads team',
         time: 'summer 2022',
         color: '#1a4261'
-    },
+    },/*
+    {
+        icon: 'ICTLogo.svg',
+        name: 'USC Institute for Creative Technologies grad student researcher',
+        location: 'Los Angeles, CA',
+        description: 'summer 2022 intern at the shopping ads team',
+        time: 'summer 2022',
+        color: '#1a4261'
+    },*/
     {
         icon: 'aws.png',
-        name: 'AWS Solutions Architect',
-        location: 'Seattle, WA',
+        name: 'aws solutions architect',
+        location: 'seattle, WA',
         description: 'built a realtime livestream censoring solution. learned how to understand customer needs.',
         time: 'Jan 2021 - July 2021',
         color: '#d68c1c'
     },
     {
         icon: 'aws.png',
-        name: 'AWS Solutions Architect intern',
-        location: 'Seattle, WA',
+        name: 'aws solutions architect intern',
+        location: 'seattle, WA',
         description: 'built a scalable, multimodal SageMaker algorithm. built an internal tool to help facilitate customer events',
         time: 'summer 2020',
         color: '#d68c1c'
@@ -46,7 +63,7 @@ function Resume(props) {
     return (
         <div className='tall'>
         <a href='2022Viswanath_Chadalapaka_Resume.pdf' download='Viswanath_Chadalapaka_Resume.pdf' style={{height: '10%'}}>
-            <p className='resume-download'><AttachFileIcon style={{fontSize: 'medium'}} /> download resume</p>
+            <p className='resume-download'><AttachFileIcon style={{fontSize: 'large'}} /> download resume</p>
         </a>
         <div class='projectlist' style={{height: '90%'}}>
             {experiences.map(experience => {
@@ -57,7 +74,7 @@ function Resume(props) {
                         contentArrowStyle={{ borderRight: '7px solid  ' + BG_COLOR }}
                         date={experience.time}
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img className='timelineicon' src={experience.icon} />}
+                        icon={<img style={{verticalAlign: 'top'}} className='timelineicon' src={experience.icon} />}
                     >
                         <h3 className="vertical-timeline-element-title">{experience.name}</h3>
                         <h5 className="vertical-timeline-element-subtitle">{experience.location}</h5>
