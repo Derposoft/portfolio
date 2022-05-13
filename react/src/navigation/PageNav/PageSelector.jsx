@@ -1,14 +1,13 @@
 import './PageSelector.css'
 import { Divider, Link } from '@mui/material'
 
-const pages = ['home', 'portfolio', 'about']
+const pages = ['home', 'resume', 'portfolio', 'about']
 const linkStyle = {
     textDecoration: 'none',
     color: 'inherit'
 }
 
 function PageSelector(props) {
-    let pfp_size = '50%'
     return (
         <div class='selector'>
             {pages.map(x => {

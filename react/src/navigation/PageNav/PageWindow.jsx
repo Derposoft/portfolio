@@ -1,5 +1,6 @@
 import './PageWindow.css'
 import Home from '../Pages/Home'
+import Resume from '../Pages/Resume'
 import Portfolio from '../Pages/Portfolio'
 import About from '../Pages/About'
 
@@ -8,6 +9,9 @@ function PageWindow(props) {
     switch(props.location.hash) {
         case '#home':
             component = <Home />
+            break
+        case '#resume':
+            component = <Resume />
             break
         case '#portfolio':
             component = <Portfolio />
