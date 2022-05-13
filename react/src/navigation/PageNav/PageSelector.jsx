@@ -8,7 +8,7 @@ const linkStyle = {
 }
 
 function PageSelector(props) {
-    const pfp_size = '50%'
+    let pfp_size = '50%'
     return (
         <div class='selector'>
             {pages.map(x => {
@@ -17,8 +17,6 @@ function PageSelector(props) {
             <Divider style={{borderColor:'gray'}} />
             <img 
                 src='me_shorthair_blurred_square.jpg' 
-                width={pfp_size}
-                height={pfp_size}
                 class='pfp'
             />
             <div class='bottomtext'>
