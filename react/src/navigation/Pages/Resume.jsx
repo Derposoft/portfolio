@@ -45,7 +45,7 @@ function Resume(props) {
     const BG_COLOR = '#53476e'
     return (
         <div className='tall'>
-        <a href='2022Viswanath_Chadalapaka_Resume.pdf' target='_blank' style={{height: '10%'}}>
+        <a href='2022Viswanath_Chadalapaka_Resume.pdf' download='Viswanath_Chadalapaka_Resume.pdf' style={{height: '10%'}}>
             <p className='resume-download'><AttachFileIcon style={{fontSize: 'medium'}} /> download resume</p>
         </a>
         <div class='projectlist' style={{height: '90%'}}>
