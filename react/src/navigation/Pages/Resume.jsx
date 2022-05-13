@@ -1,5 +1,7 @@
 import './Page.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
+import { Button } from '@mui/material'
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 import 'react-vertical-timeline-component/style.min.css';
 
 const experiences = [
@@ -42,7 +44,11 @@ const educations = [
 function Resume(props) {
     const BG_COLOR = '#53476e'
     return (
-        <div class='projectlist'>
+        <div className='tall'>
+        <a href='2022Viswanath_Chadalapaka_Resume.pdf' target='_blank' style={{height: '10%'}}>
+            <p className='resume-download'><AttachFileIcon style={{fontSize: 'medium'}} /> download resume</p>
+        </a>
+        <div class='projectlist' style={{height: '90%'}}>
             {experiences.map(experience => {
                 return (<VerticalTimeline>
                     <VerticalTimelineElement
@@ -54,13 +60,14 @@ function Resume(props) {
                         icon={<img className='timelineicon' src={experience.icon} />}
                     >
                         <h3 className="vertical-timeline-element-title">{experience.name}</h3>
-                        <h4 className="vertical-timeline-element-subtitle">{experience.location}</h4>
+                        <h5 className="vertical-timeline-element-subtitle">{experience.location}</h5>
                         <p>
                         {experience.description}
                         </p>
                     </VerticalTimelineElement>
                 </VerticalTimeline>)
             })}
+        </div>
         </div>
     )
 }
