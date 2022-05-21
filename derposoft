@@ -1,0 +1,13 @@
+echo UNDER CONSTRUCTION. DO NOT RUN.
+
+echo looking for $1
+for FILE in framework/*
+do
+    echo $FILE
+    echo $1
+    if ["framework/$1" = "$FILE"]
+    then
+        echo there is a file
+        #do framework/$FILE
+    fi
+done
