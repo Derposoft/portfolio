@@ -5,11 +5,11 @@ import config from '../../utils/config.json'
 function Portfolio(props) {
     const projectNames = [
         {name: 'Derposoft.github.io', subtitle: 'the website you\'re on!'},
-        {name: 'commando', subtitle: 'the first thing I ever wrote: a game written in XNA'},
-        {name: 'discord-chess-bot', subtitle: 'a sassy Discord chess bot'},
-        {name: 'ai-educator', subtitle: 'AI-based course generation website'},
-        {name: 'multimodal-algorithm', subtitle: 'AWS SageMaker algorithm for multimodal data'},
         {name: 'crypto_pump_and_dump_with_deep_learning', subtitle: 'a deep learning study in the domain of crypto fraud'},
+        {name: 'ai-educator', subtitle: 'AI-based course generation website'},
+        {name: 'discord-chess-bot', subtitle: 'a sassy Discord chess bot'},
+        {name: 'multimodal-algorithm', subtitle: 'AWS SageMaker algorithm for multimodal data'},
+        {name: 'commando', subtitle: 'the first thing I ever wrote: a game written in XNA'},
         {name: 'chess-visualizer', subtitle: 'a visual tool for analyzing past games'}
     ]
     

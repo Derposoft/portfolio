@@ -1,5 +1,5 @@
 import './Page.css'
-import { Divider, Link } from '@mui/material'
+import { Link } from '@mui/material'
 import { GitHub, LinkedIn } from '@mui/icons-material'
 import FancyTyper from '../../components/FancyTyper/FancyTyper'
 
@@ -15,7 +15,7 @@ function Home(props) {
                 </Link>
             </div>
             <FancyTyper speed={50} eraseDelay={1500} typingDelay={1500}>
-                {['to prospective HMs: welcome to vchad\'s website!', 'gamers: hmu @Derposoft#3658']}
+                {['to HMs, professors, and recruiters: welcome!', 'gamers: hmu @Derposoft#3658']}
             </FancyTyper>
         </div>
     )

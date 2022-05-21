@@ -17,9 +17,10 @@ function PageSelector(props) {
             <img 
                 src='me_shorthair_blurred_square.jpg' 
                 class='pfp'
+                alt='vchad outside sunny'
             />
             <div class='bottomtext'>
-                <Link style={{...linkStyle/*, position: 'absolute', bottom: '10%'*/}} href='https://github.com/Derposoft/Derposoft.github.io'>view source</Link>
+                <Link style={{...linkStyle/*, position: 'absolute', bottom: '10%'*/}} href='https://github.com/Derposoft/Derposoft.github.io' target='_blank'>view source</Link>
             </div>
         </div>
     )

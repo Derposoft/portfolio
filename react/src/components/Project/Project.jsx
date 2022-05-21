@@ -1,6 +1,6 @@
 import './Project.css'
 import { useState } from 'react'
-import { Box, Collapse, Fade, Grow, Grid } from '@mui/material'
+import { Box, Collapse, Grid } from '@mui/material'
 import { ArrowDropDown, GitHub } from '@mui/icons-material'
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios'
@@ -36,7 +36,7 @@ function Project(props) {
                     </Grid>
                     <Grid item xs={2}>
                         <div className='rotatebutton'>
-                            <a onClick={e=>e.stopPropagation()} style={{color:'white', zIndex:25}} href={props.url} target='_blank'><GitHub fontSize='large' /></a>
+                            <a onClick={e=>e.stopPropagation()} style={{color:'white', zIndex:25}} href={props.url} target='_blank' rel='noreferrer'><GitHub fontSize='large' /></a>
                             <ArrowDropDown style={{marginLeft: '1vw'}} fontSize='large' className={(open ? 'turndown' : 'turnup')}/>
                         </div>
                     </Grid>

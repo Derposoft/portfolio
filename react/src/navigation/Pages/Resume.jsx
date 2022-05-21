@@ -1,17 +1,27 @@
 import './Page.css'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { Button } from '@mui/material'
 import AttachFileIcon from '@mui/icons-material/AttachFile';
 import 'react-vertical-timeline-component/style.min.css';
+/*
 import axios from 'axios'
 const cheerio = require('cheerio')
-/*
 const LINKEDIN_URL = 'https://www.linkedin.com/in/viswanath-chadalapaka-910b2013b/'
 axios.get(LINKEDIN_URL).then(res => {
     const $ = cheerio.load(res.data)
     const lists = $('.pvs-list')
     console.log(lists)
 })
+
+const educations = [
+    {
+        icon: 'ucdLogo.png',
+        name: 'B.S. in Computer Science',
+        location: 'Davis, CA',
+        description: '',
+        time: '2017 - 2020',
+        color: '#fff'
+    }
+]
 */
 const experiences = [
     {
@@ -47,16 +57,6 @@ const experiences = [
         color: '#d68c1c'
     }
 ]
-const educations = [
-    {
-        icon: 'ucdLogo.png',
-        name: 'B.S. in Computer Science',
-        location: 'Davis, CA',
-        description: '',
-        time: '2017 - 2020',
-        color: '#fff'
-    }
-]
 
 function Resume(props) {
     const BG_COLOR = '#53476e'
@@ -74,7 +74,7 @@ function Resume(props) {
                         contentArrowStyle={{ borderRight: '7px solid  ' + BG_COLOR }}
                         date={experience.time}
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img style={{verticalAlign: 'top'}} className='timelineicon' src={experience.icon} />}
+                        icon={<img style={{verticalAlign: 'top'}} className='timelineicon' src={experience.icon} alt='logo' />}
                     >
                         <h3 className="vertical-timeline-element-title">{experience.name}</h3>
                         <h5 className="vertical-timeline-element-subtitle">{experience.location}</h5>
