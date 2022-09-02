@@ -19,11 +19,11 @@ const Main = (e) => {
   return (
     <Box sx={{ flexGrow: 1 }} class='main'>
       <Grid container spacing={2} style={{height: '100%'}}>
-        <Grid item xs={4} style={{verticalAlign: 'center', textAlign: 'center'}}>
+        <Grid item xs={3} style={{verticalAlign: 'center', textAlign: 'center'}}>
           <PageSelector page={page} />   
         </Grid>
         {/*<Divider orientation="vertical" flexItem style={{marginRight:"-1px"}} />*/}
-        <Grid item xs={8} className='tall'>
+        <Grid item xs={9} className='tall'>
           <div className='tall'>
             <PageWindow location={location} />
           </div>

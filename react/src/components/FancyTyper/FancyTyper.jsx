@@ -1,5 +1,6 @@
 import './FancyTyper.css'
 import ReactTypingEffect from 'react-typing-effect'
+import Typist from 'react-typist'
 
 function FancyTyper(props) {
     //console.log(props)
@@ -31,6 +32,9 @@ function FancyTyper(props) {
                 );
                 }}        
             />
+            {/*<Typist>
+                {props.children}
+            </Typist>*/}
         </div>
     )
 }

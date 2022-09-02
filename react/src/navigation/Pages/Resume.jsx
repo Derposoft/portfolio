@@ -26,20 +26,23 @@ const educations = [
 const experiences = [
     {
         icon: 'metaLogo.png',
-        name: 'meta SDE intern',
+        name: 'meta SWE intern',
         location: 'menlo park, CA',
-        description: 'summer 2022 intern at the shopping ads team',
+        description: 'designed and developed a metrics collection framework for Facebook and Instagram Ads models. \
+        also generated and tested novel features for those models.',
         time: 'summer 2022',
         color: '#1a4261'
-    },/*
+    },
     {
-        icon: 'ICTLogo.svg',
-        name: 'USC Institute for Creative Technologies grad student researcher',
+        icon: 'ict_logo.jpeg',
+        iconRadius: '50%',
+        name: 'USC ICT grad student researcher',
         location: 'Los Angeles, CA',
-        description: 'summer 2022 intern at the shopping ads team',
-        time: 'summer 2022',
+        description: 'grad student researcher at the USC Institute for Creative Technologies, exploring the \
+        intersection of graph learning and reinforcement learning. funded by DARPA.',
+        time: '09/2021-05/2022, 08/2022-Present',
         color: '#1a4261'
-    },*/
+    },
     {
         icon: 'aws.png',
         name: 'aws solutions architect',
@@ -74,7 +77,7 @@ function Resume(props) {
                         contentArrowStyle={{ borderRight: '7px solid  ' + BG_COLOR }}
                         date={experience.time}
                         iconStyle={{ background: '#fff', color: '#fff' }}
-                        icon={<img style={{verticalAlign: 'top'}} className='timelineicon' src={experience.icon} alt='logo' />}
+                        icon={<img style={{verticalAlign: 'top', borderRadius: experience.iconRadius}} className='timelineicon' src={experience.icon} alt='logo' />}
                     >
                         <h3 className="vertical-timeline-element-title">{experience.name}</h3>
                         <h5 className="vertical-timeline-element-subtitle">{experience.location}</h5>

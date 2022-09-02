@@ -5,7 +5,7 @@ import { ArrowDropDown, GitHub } from '@mui/icons-material'
 import ReactMarkdown from 'react-markdown'
 import axios from 'axios'
 
-const MAX_TITLE_LEN = 35
+const MAX_TITLE_LEN = 41
 
 function Project(props) {
     var preprocessReadme = text => {
@@ -13,6 +13,11 @@ function Project(props) {
     }
     var preprocessTitle = text => {
         return text.length > MAX_TITLE_LEN ? text.substr(0, MAX_TITLE_LEN-3)+'...' : text
+    }
+    var preprocessTitleOpen = text => {
+        return text /*text.length > MAX_TITLE_LEN ? 
+            text.substr(0, MAX_TITLE_LEN-1)+'-\n'+text.substr(MAX_TITLE_LEN-1, text.length-MAX_TITLE_LEN+1)
+            : text*/
     }
     const [readme, setReadme] = useState('')
     const readmeLink = (props.url+'/master/README.md').replace('github', 'raw.githubusercontent')
@@ -31,7 +36,7 @@ function Project(props) {
             <Box>
                 <Grid container>
                     <Grid item xs={10}>
-                        <b class='cardtext'>{preprocessTitle(props.name)}</b>
+                        <b class='cardtext'>{open ? preprocessTitleOpen(props.name) : preprocessTitle(props.name)}</b>
                         <p class='readmetext'>{props.subtitle}</p>
                     </Grid>
                     <Grid item xs={2}>

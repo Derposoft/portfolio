@@ -1,9 +1,21 @@
 import './Page.css'
 import { Link } from '@mui/material'
 import { GitHub, LinkedIn } from '@mui/icons-material'
+import { useState, useEffect } from 'react'
 import FancyTyper from '../../components/FancyTyper/FancyTyper'
+import Typist from 'react-typist'
 
 function Home(props) {
+    const [textidx, setTextidx] = useState(0);
+    const texts = ['to HMs, professors, and recruiters: welcome!', 'gamers: hmu @Derposoft#3658']
+    useEffect(() => {
+        const id = setInterval(() => setTextidx((oldidx) => oldidx + 1), 5000);
+
+        return () => {
+            clearInterval(id);
+        };
+    }, []);
+    
     return (
         <div>
             <div>
@@ -17,6 +29,10 @@ function Home(props) {
             <FancyTyper speed={50} eraseDelay={1500} typingDelay={1500}>
                 {['to HMs, professors, and recruiters: welcome!', 'gamers: hmu @Derposoft#3658']}
             </FancyTyper>
+            {/*<Typist key={textidx}>
+                <Typist.Backspace count={8} delay={200} />
+                {texts[textidx % texts.length]}
+            </Typist>*/}
         </div>
     )
 }

@@ -27,3 +27,7 @@
     from{border-right-color: transparent;}
     to{border-right-color: rgba(0,255,0,.75);}
 }
+
+.fancytyper {
+    display: inline;
+}
