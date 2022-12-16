@@ -6,6 +6,7 @@ function Portfolio(props) {
     const projectNames = [
         {name: 'Derposoft.github.io', subtitle: 'the website you\'re on!'},
         {name: 'crypto_pump_and_dump_with_deep_learning', subtitle: 'a deep learning study in the domain of crypto fraud'},
+        {name: 'plot_hole_detection', subtitle: 'an NLP study in detecting logical fallacies'},
         {name: 'ai-educator', subtitle: 'AI-based course generation website'},
         {name: 'discord-chess-bot', subtitle: 'a sassy Discord chess bot'},
         {name: 'multimodal-algorithm', subtitle: 'AWS SageMaker algorithm for multimodal data'},
