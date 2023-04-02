@@ -5,6 +5,6 @@ git rm -rf static
 cd react
 cp -r build/*
 cd ..
-git add static/ index.html asset-manifest.json
+git add .
 git commit -m "+website update"
 git push
