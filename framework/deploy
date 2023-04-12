@@ -3,7 +3,7 @@ npm run build
 cd ..
 git rm -rf static
 cd react
-cp -r build/*
+cp -r build/* ../
 cd ..
 git add .
 git commit -m "+website update"
