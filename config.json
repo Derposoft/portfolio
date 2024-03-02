@@ -2,14 +2,84 @@
     "GITHUB_USER": "Derposoft",
     "GITHUB_URL": "https://github.com/",
     "projects": [
-        {"name": "portfolio", "subtitle": "The website you're on!"},
-        {"name": "GNNsAsEnvs", "subtitle": "Code for \"Leveraging GNNs to Model Environments in RL\" (FLAIRS '23). Funded by Army Research Lab."},
-        {"name": "crypto_pump_and_dump_with_deep_learning", "subtitle": "A deep learning study in the domain of crypto fraud."},
-        {"name": "plot_hole_detection", "subtitle": "an NLP study in detecting logical fallacies"},
-        {"name": "ai-educator", "subtitle": "AI-based course generation website"},
-        {"name": "discord-chess-bot", "subtitle": "a sassy Discord chess bot"},
-        {"name": "multimodal-algorithm", "subtitle": "AWS SageMaker algorithm for multimodal data"},
-        {"name": "commando", "subtitle": "the first thing I ever wrote: a game written in XNA"},
-        {"name": "chess-visualizer", "subtitle": "a visual tool for analyzing past games"}
+        {
+            "name": "portfolio",
+            "subtitle": "The website you're on!"
+        },
+        {
+            "name": "GNNsAsEnvs",
+            "subtitle": "Code for \"Leveraging GNNs to Model Environments in RL\" (FLAIRS '23). Funded by Army Research Lab."
+        },
+        {
+            "name": "crypto_pump_and_dump_with_deep_learning",
+            "subtitle": "A deep learning study in the domain of crypto fraud."
+        },
+        {
+            "name": "plot_hole_detection",
+            "subtitle": "an NLP study in detecting logical fallacies"
+        },
+        {
+            "name": "ai-educator",
+            "subtitle": "AI-based course generation website"
+        },
+        {
+            "name": "discord-chess-bot",
+            "subtitle": "a sassy Discord chess bot"
+        },
+        {
+            "name": "multimodal-algorithm",
+            "subtitle": "AWS SageMaker algorithm for multimodal data"
+        },
+        {
+            "name": "commando",
+            "subtitle": "the first thing I ever wrote: a game written in XNA"
+        },
+        {
+            "name": "chess-visualizer",
+            "subtitle": "a visual tool for analyzing past games"
+        }
+    ],
+    "experiences": [
+        {
+            "icon": "stripe.png",
+            "name": "SWE @ stripe",
+            "location": "seattle, WA",
+            "description": "working as a part of the advanced attacks team.",
+            "time": "02/2024 - Present",
+            "color": "#5539cc"
+        },
+        {
+            "icon": "metaLogo.png",
+            "name": "SWE intern @ meta",
+            "location": "menlo park, CA",
+            "description": "designed and developed a metrics collection framework for Facebook and Instagram Ads models. also generated and tested novel features for those models.",
+            "time": "05/2022 - 08/2022",
+            "color": "#1a4261"
+        },
+        {
+            "icon": "ict_logo.jpeg",
+            "iconRadius": "50%",
+            "name": "AI researcher @ USC ICT",
+            "location": "Los Angeles, CA",
+            "description": "grad student researcher at the USC Institute for Creative Technologies, exploring the intersection of graph learning and reinforcement learning. funded by DARPA.",
+            "time": "09/2021 - 12/2023",
+            "color": "#1a4261"
+        },
+        {
+            "icon": "aws.png",
+            "name": "solutions architect @ AWS",
+            "location": "seattle, WA",
+            "description": "built a realtime livestream censoring solution. learned how to understand customer needs.",
+            "time": "01/2021 - 06/2021",
+            "color": "#d68c1c"
+        },
+        {
+            "icon": "aws.png",
+            "name": "solutions architect intern @ AWS",
+            "location": "seattle, WA",
+            "description": "built a scalable, multimodal SageMaker algorithm. built an internal tool to help facilitate customer events",
+            "time": "05/2020 - 08/2020",
+            "color": "#d68c1c"
+        }
     ]
 }
